@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #007;
+    /*If you needed background in your project*/
+    --primary-color: #777;
+    --secondary-color: #215489;
+    --color: #333;
+    --mar: 1rem;
+    --pad: 1rem;
+    --fs: 1rem;
+    --fo-fam: 'Roboto', sans-serif;
+    --fo-we: 400;
+    --fo-we-bold: 700;
+    --lh: 1.4;
+    --flex: flex;
+    --justify-co: center;
+    --ali-it: center;
+
+
+
+
+
+
+
+
+}
+
+body {
+    background-color: var(--bg);
+    font-family: var(--fo-fam);
+    font-size: var(--fs);
+    line-height: var(--lh);
+
+}
