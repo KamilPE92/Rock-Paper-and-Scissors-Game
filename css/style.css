@@ -1,3 +1,4 @@
+/* GENERAL STYLES  FOR PROJECT */
 * {
     margin: 0;
     padding: 0;
@@ -7,35 +8,170 @@
 }
 
 :root {
-    --bg: #007;
-    /*If you needed background in your project*/
-    --primary-color: #777;
-    --secondary-color: #215489;
-    --color: #333;
+    /* COLORS */
+    --bg: #0B3142;
+    ---color: #d6d3f0;
+
+    ---primary-color: #DB2955;
+    --secondary-color: #0F5257;
+    --third-color: #DB2955;
+
+    --color-win: #183b11;
+    --color-lose: #cd0101;
+    --color-draw: #007;
+
+    /* Margin &Padding  */
+
     --mar: 1rem;
+    --mar--big: 2.875rem;
     --pad: 1rem;
+    --lh: 1.4;
+    --let-sp: 00.25rem;
+    --unit: 1rem;
+    --scbWidth: 12.5rem;
+
+    /* FONTS */
+
     --fs: 1rem;
+    --fs-sm: 0.875rem;
+    --fs-medium: 1.5rem;
+    --fs-big: 2.875rem;
     --fo-fam: 'Roboto', sans-serif;
     --fo-we: 400;
     --fo-we-bold: 700;
-    --lh: 1.4;
+
+    /* LAYOUT */
+
     --flex: flex;
     --justify-co: center;
     --ali-it: center;
-
-
-
-
-
-
-
-
 }
 
 body {
     background-color: var(--bg);
     font-family: var(--fo-fam);
     font-size: var(--fs);
+    color: var(---color);
     line-height: var(--lh);
 
 }
+
+/* GENERAL STYLES  FOR PROJECT END */
+
+/* Header Start */
+
+header {
+    background: var(--secondary-color);
+    padding: var(--pad);
+}
+
+header>h1 {
+    text-align: center;
+    font-family: var(--fo-fam);
+}
+
+/* Header end */
+
+
+
+/* Score board start */
+
+.score--board {
+    border: 3px solid var(--color);
+    color: var(--color);
+    font-size: var(--fs-big);
+    margin: var(--mar--big) auto;
+    border-radius: 4px;
+    text-align: center;
+    padding: var(--pad), var(--mar--big);
+    position: relative;
+    width: var(--scbWidth)
+}
+
+.badge {
+    background: var(--third-color);
+    color: var(--color);
+    padding: var(--pad);
+    font-size: var(--fs-sm);
+    font-family: var(--fo-fam);
+
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+/* Score board end */
+
+
+/* Result div start */
+.result {
+    color: var(--color);
+    font-size: var(--fs-medium);
+}
+
+.result>p {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    line-height: 40px;
+
+}
+
+/* Result div end */
+
+
+/* Choices start  */
+
+.choices {
+    text-align: center;
+    margin: var(--mar--big) 0;
+
+
+}
+
+.choice {
+    display: inline-block;
+    border-radius: 50%;
+    border: 0.25rem solid;
+    margin: 0 var(--mar);
+    cursor: pointer;
+
+}
+
+.choice:hover {
+    background: var(--secondary-color);
+    border-color: var(--third-color);
+    transition: 0, 4ms ease-in-out;
+}
+
+.cta {
+    color: var(--color);
+    font-size: var(--fs-medium);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+
+}
+
+
+
+
+
+
+/* Choices end  */
+
+/* *Quote Erat Demonstrandum
+// This project was completed.
+// Zrobione.
+// Developer: Kamil Pietruszka (K.P{Dev})
+
+// Current Date: 06.02.2022 */
