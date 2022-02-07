@@ -3,8 +3,6 @@
 General Description
 Rock paper scissors is a hand game, usually played between two people, (computer vs human in case of this app) in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" "paper" , and "scissors".
 
-WRZUCIĆ NA GITHUBA!!!!
-
 Features
 Live score update
 Nice hover efect
